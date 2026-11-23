@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Léna Garden</title>
+<meta name="description" content="Léna Garden. Je crée : vidéo, écriture, musique, code. Directrice de Techno Trash, cofondatrice de Holl Studio, LOREM en 2027.">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121210" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/fonts/CormorantGaramond-italic-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/CormorantGaramond-normal-500.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:400 500;font-display:swap;src:url("/fonts/CormorantGaramond-italic-400.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/IBMPlexMono-normal-400.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/IBMPlexMono-normal-500.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:swap;src:url("/fonts/IBMPlexMono-italic-400.woff2") format("woff2")}
+
+:root{--bg:#f6f3ec;--fg:#1c1b19;--dim:#7a766c;--line:#d9d4c7;--accent:#3f5b3a}
+@media (prefers-color-scheme:dark){:root{--bg:#121210;--fg:#e8e4d8;--dim:#8d887b;--line:#2c2b26;--accent:#a9c79b}}
+
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--fg);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:clamp(.88rem,.84rem + .2vw,.98rem);line-height:1.75}
+main{max-width:42rem;margin:0 auto;padding:clamp(3rem,10vw,7rem) 1.5rem 5rem}
+
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:500;line-height:1.1;margin:0}
+h1{font-size:clamp(3rem,10vw,5rem);letter-spacing:-.01em}
+h1 em{display:block;color:var(--dim);font-weight:400;font-size:.5em;margin-top:.15em}
+h2{font-size:clamp(1.8rem,5vw,2.4rem);font-style:italic;font-weight:400;margin-bottom:1.4rem}
+h3{font-size:1.45rem;margin-bottom:.15rem}
+
+p{margin:0 0 1em}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--dim);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover,a:focus-visible{color:var(--accent);text-decoration-color:var(--accent)}
+::selection{background:var(--accent);color:var(--bg)}
+
+.lead{margin-top:2rem;font-size:1.02em;max-width:34rem}
+.hello{margin-top:1.2rem;color:var(--dim)}
+nav{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;color:var(--dim)}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+
+section{margin-top:clamp(3.5rem,9vw,5.5rem);padding-top:1.6rem;border-top:1px solid var(--line)}
+.dim{color:var(--dim)}
+small,.meta{color:var(--dim);font-size:.86em}
+
+.project{margin-bottom:2.2rem}
+.project p{margin:.35rem 0 0}
+.tag{display:inline-block;margin-left:.5rem;font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.04em;text-transform:lowercase;color:var(--accent);border:1px solid var(--accent);border-radius:99px;padding:0 .6em;vertical-align:.25em}
+
+dl{margin:0}
+.row{display:grid;grid-template-columns:8.2rem 1fr;gap:.2rem 1.2rem;padding:.7rem 0;border-bottom:1px dotted var(--line)}
+.row:last-child{border-bottom:0}
+dt{color:var(--dim)}
+dd{margin:0}
+dd b{font-weight:500}
+@media (max-width:34rem){.row{grid-template-columns:1fr;gap:0}}
+
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:.35rem 0}
+ul.plain li::before{content:"· ";color:var(--dim)}
+
+blockquote{margin:0 0 2rem;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(1.3rem,3.5vw,1.6rem);line-height:1.35;color:var(--fg)}
+
+footer{margin-top:4rem;color:var(--dim);font-size:.86em}
+</style>
+</head>
+<body>
+
+<main>
+
+<header>
+  <h1>Léna Garden<em>je crée des choses 🌱</em></h1>
+  <p class="lead">Artiste, un peu nerd sur les bords. Je monte, j'écris, je fais des voix, je code, je chante, je réfléchis à des stratégies, et je kiffe de fou tout ça. J'ai fait de Techno Trash une chaîne de 250&nbsp;000 abonnés, et je m'occupe du reste à côté.</p>
+  <p class="hello">Mon projet de vie est tout bête : créer pour le plaisir, et en vivre très confortablement.</p>
+  <nav aria-label="Sections">
+    <a href="#en-cours">en cours</a>
+    <a href="#savoir-faire">savoir-faire</a>
+    <a href="#parcours">parcours</a>
+    <a href="#productions">productions</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<section id="en-cours">
+  <h2>En ce moment</h2>
+
+  <div class="project">
+    <h3>lena garden<span class="tag">art</span></h3>
+    <p>Ma vraie maison. La musique d'abord : basse (j'ai une 5 cordes, c'est une dinguerie), chant, clavier, composition. Puis l'image, le style, l'écriture, la réalisation. Je construis ça tranquillement, sans me presser, en m'amusant. C'est la seule règle.</p>
+  </div>
+
+  <div class="project">
+    <h3>Trash</h3>
+    <p>Mon travail depuis 2019. Je dirige <b>Techno Trash</b>, la chaîne tech et hacking du groupe, avec une équipe d'une douzaine de personnes. En ce moment : un lot de douze vidéos, des shorts tous les jours, et un système de production avec des agents pour écrire et monter plus vite sans perdre ce qui fait la patte.</p>
+  </div>
+
+  <div class="project">
+    <h3>Holl Studio</h3>
+    <p>L'agence que j'ai cofondée avec Benji. On met l'équipe technique des grandes chaînes au service des marques et des créateurs : stratégie de contenu, ligne éditoriale, guide pour l'appliquer. Je construis le process de A à Z. Règle de la maison : aucune affirmation sans source.</p>
+  </div>
+
+  <div class="project">
+    <h3>LOREM</h3>
+    <p>Un média français sur la musique, qui démarre en 2027. Le nom vient du Lorem Ipsum : du vrai contenu à la place du faux texte. <a href="https://loremipsa.com">loremipsa.com</a></p>
+  </div>
+</section>
+
+<section id="savoir-faire">
+  <h2>Ce que je sais faire</h2>
+  <p>Beaucoup de choses, et je les fais bien. Je crée de la matière du début à la fin, ou j'en prends un bout.</p>
+  <dl>
+    <div class="row"><dt>Montage</dt><dd>Vidéo, audio, effets visuels, animation. Sept ans pour de grosses chaînes.</dd></div>
+    <div class="row"><dt>Écriture</dt><dd>Scripts, recherche, titres, textes. Je cherche, je trie, je raconte.</dd></div>
+    <div class="row"><dt>Voix</dt><dd>Voix-off et doublage.</dd></div>
+    <div class="row"><dt>Direction</dt><dd>Ligne éditoriale, équipe, production d'une chaîne entière.</dd></div>
+    <div class="row"><dt>Stratégie</dt><dd>YouTube et réseaux : audit, benchmark, ligne, process. Avec des sources.</dd></div>
+    <div class="row"><dt>Code</dt><dd>Next.js, outils, self-hosting, logiciels libres.</dd></div>
+    <div class="row"><dt>Musique</dt><dd>Basse, chant, clavier, composition.</dd></div>
+    <div class="row"><dt>Direction artistique</dt><dd>Identité et univers visuel, comme pour Holl Studio.</dd></div>
+  </dl>
+  <p style="margin-top:1.6rem"><b>Je prête tout ça aux projets qui me plaisent, et seulement à eux.</b> Si ton idée me fait envie, on s'entendra très bien. Si elle me laisse indifférente, je te le dirai gentiment.</p>
+</section>
+
+<section id="parcours">
+  <h2>Parcours</h2>
+  <dl>
+    <div class="row"><dt>2023 - auj.</dt><dd><b>Fondatrice et directrice, Techno Trash</b><br><span class="meta">Un projet né au sein de Trash. Ligne éditoriale, équipe d'une douzaine de personnes, production de toute la chaîne.</span></dd></div>
+    <div class="row"><dt>2025 - auj.</dt><dd><b>Cofondatrice, Holl Studio</b><br><span class="meta">Stratégie et production vidéo pour les marques.</span></dd></div>
+    <div class="row"><dt>2026 - auj.</dt><dd><b>Rédactrice, Archi Prod</b><br><span class="meta">Recherche et écriture pour YouTube.</span></dd></div>
+    <div class="row"><dt>2020 - auj.</dt><dd><b>Rédactrice, Trash</b><br><span class="meta">Recherche et écriture pour les chaînes du groupe.</span></dd></div>
+    <div class="row"><dt>2019 - 2025</dt><dd><b>Monteuse, Trash</b><br><span class="meta">Montage, audio, effets visuels, animation.</span></dd></div>
+    <div class="row"><dt>2021 - 2023</dt><dd><b>Montage vidéo, BonneGueule</b><br><span class="meta">Vidéos publicitaires et contenu organique.</span></dd></div>
+    <div class="row"><dt>2021 - 2023</dt><dd><b>Kitmoon</b><br><span class="meta">Mon média YouTube et TikTok autour de Minecraft : 70&nbsp;000 abonnés, plus de 25 millions de vues. Un projet passion.</span></dd></div>
+    <div class="row"><dt>2024</dt><dd><b>Stage, Combak</b><br><span class="meta">Comparateur de l'occasion et du reconditionné : Next.js, infrastructure, content marketing.</span></dd></div>
+  </dl>
+
+  <h2 style="margin-top:3rem">Formation</h2>
+  <dl>
+    <div class="row"><dt>2024 - 2026</dt><dd><b>Master Entrepreneuriat et Innovation</b>, IGR-IAE Rennes<br><span class="meta">Statut national étudiant entrepreneur, Pépite Bretagne.</span></dd></div>
+    <div class="row"><dt>2021 - 2024</dt><dd><b>Licence d'informatique</b>, Université de Rennes<br><span class="meta">Certificat ANSSI en 2023.</span></dd></div>
+    <div class="row"><dt>en continu</dt><dd>Japonais, solfège, lecture, veille sur l'IA.</dd></div>
+  </dl>
+</section>
+
+<section id="productions">
+  <h2>Productions</h2>
+  <p>Plusieurs centaines de vidéos écrites, montées ou dirigées depuis 2019, pour Trash, Techno Trash, Trash Bandicoot, Cinéma Trash, Manga Trash, Science Trash, Xem, Watikutsen, BonneGueule et Kitmoon.</p>
+  <ul class="plain">
+    <li>8,5 millions de vues sur la plus grosse, 5 vidéos au-dessus de 4 millions.</li>
+    <li>Techno Trash : 250&nbsp;000 abonnés.</li>
+    <li>Voix-off et doublage pour Techno Trash et Kitmoon.</li>
+    <li>Études de cas stratégie : Techno Trash, Kitmoon, Holl Studio.</li>
+  </ul>
+  <p style="margin-top:1.4rem">Tout est dans <a href="https://youtube.com/playlist?list=PL8LJOooPoF37FOSEiES6ir-Wl4OHVmL1j">la playlist Portfolio</a>.</p>
+
+  <h2 style="margin-top:3rem">Code</h2>
+  <p>Quand un truc m'agace assez, j'en fais un outil. J'héberge le reste sur mon propre serveur.</p>
+  <ul class="plain">
+    <li><a href="https://github.com/lenadotgarden/repetitions">repetitions</a> : un détecteur de répétitions pour textes français, sans IA, sans serveur.</li>
+    <li><a href="https://github.com/lenadotgarden/mdone">mdone</a> : une interface type Things pour Vikunja.</li>
+    <li>Le reste : <a href="https://github.com/lenadotgarden">github.com/lenadotgarden</a></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <blockquote>Quand j'étais plus jeune, je voulais être inventeur. Malheureusement, ce métier n'existe pas. C'est juste qu'aujourd'hui, on l'appelle entrepreneur.</blockquote>
+  <h2>Écris-moi</h2>
+  <p>Je peux être un peu réservée au début, le temps de prendre mes marques. Dis-moi ce que tu construis et pourquoi ça compte pour toi, et je te réponds avec plaisir. 💖</p>
+  <ul class="plain">
+    <li><a href="mailto:contact@lena.sh">contact@lena.sh</a></li>
+    <li><a href="https://www.linkedin.com/in/lenadotgarden">LinkedIn</a>, peu actif : le mail est bien plus rapide</li>
+    <li><a href="https://github.com/lenadotgarden">GitHub</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>Fait à la main en HTML et CSS, sans JavaScript, sans traceur. Merci d'avoir pris le temps de me lire 🦌</p>
+</footer>
+
+</main>
+</body>
+</html>
